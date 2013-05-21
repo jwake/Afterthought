@@ -56,13 +56,10 @@
       <Name>Afterthought</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>$(SolutionDir)Afterthought.Amender/bin/debug/Afterthought.Amender.exe "$(TargetPath)"</PostBuildEvent>
+    <PostBuildEvent>"$(SolutionDir)Afterthought.Amender/bin/debug/Afterthought.Amender.exe" "$(TargetPath)"</PostBuildEvent>
   </PropertyGroup>
 </Project>
