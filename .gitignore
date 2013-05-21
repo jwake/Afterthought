@@ -5,7 +5,9 @@
 *.vspscc
 *.testsettings
 *.trx
+*.bak
 bin/
 obj/
 TestResults/
 _ReSharper*
+
